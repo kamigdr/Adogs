@@ -15,30 +15,13 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     let motivo = document.getElementById("motivo").value;
     let permite = document.getElementById("permite").checked;
     let seguro = document.getElementById("seguro").checked;
-    let financeiro = document.getElementById("financeiro").checked;
     let impulso = document.getElementById("impulso").checked;
     let termo = document.getElementById("termo").checked;
 
     let cpfCadastrados = ["125678900", "111111111"];
 
-    // Teste de Campo
+
     console.log("Hello Test");
-
-    //validações erros padrão
-
-    if (nome.length < 3) return alert("Nome Inválido");
-    if (!email.includes("@")) return alert("Email Inválido");
-    if (telefone.length < 8) return alert("Telefone Inválido");
-    if (cpf == "") return alert("CPF Obrigatório");
-    if (cpfCadastrados.includes(cpf)) return alert("CPF já cadastrado");
-    if (idade < 18) return alert("Deve ser maior de 18!");
-    if (cidade == "") return alert("Cidade obrigatória");
-    if (moradia == "") return alert("Moradia");
-    if (!quintal) return alert("Informe sobre quintal!");
-    if (!pet) return alert("Informe se ja teve pet!");
-    if (horas == "" || isNaN(horas)) return alert("Horas Inválidas");
-    if (motivo.length < 10) return alert("Motivo muito curto!");
-    if (!termo) return alert("Aceite os termos para a adoção!");
 
     // regra de negocio
 
