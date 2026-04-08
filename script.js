@@ -1,7 +1,7 @@
 document.getElementById("formAdocao").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    //captação
+
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     let telefone = document.getElementById("telefone").value;
@@ -23,7 +23,7 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
 
     console.log("Hello Test");
 
-    // regra de negocio
+
 
     if (moradia == "apartamento" && quintal.value == "sim") {
         return alert("Apartamento não pode ter quintal!");
