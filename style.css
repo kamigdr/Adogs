@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +8,31 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
+    background: url("assets/transferir.jfif") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
 }
 
 
 main {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     padding: 25px;
     border-radius: 12px;
     width: 420px;
-    margin: 40px auto; /* centraliza sem usar flex */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 
@@ -35,7 +50,6 @@ fieldset {
     margin-bottom: 15px;
 }
 
-
 legend {
     font-weight: bold;
     color: #444;
@@ -46,7 +60,6 @@ label {
     display: block;
     margin-top: 10px;
     color: #333;
-    font-size: 14px;
 }
 
 
@@ -57,14 +70,12 @@ input, select, textarea {
     border-radius: 6px;
     border: 1px solid #ccc;
     transition: 0.3s;
-    font-size: 14px;
 }
 
 
 input:focus, select:focus, textarea:focus {
     border-color: #6c63ff;
     outline: none;
-    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
 }
 
 
@@ -72,7 +83,6 @@ input[type="radio"],
 input[type="checkbox"] {
     width: auto;
     margin-right: 5px;
-    cursor: pointer;
 }
 
 
@@ -84,11 +94,9 @@ button {
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
-
 
 button:hover {
     background: #574fd6;
@@ -99,10 +107,8 @@ button:hover {
     width: 420px;
     margin: 20px auto;
     padding: 12px;
-    background: #e6ffed;
-    border: 1px solid #28a745;
+    background: rgba(230, 255, 237, 0.95);
     border-radius: 8px;
-    color: #155724;
 }
 
 
@@ -110,4 +116,21 @@ button:hover {
     main, #resultado {
         width: 90%;
     }
+}
+
+
+/* esquerda */
+.gif-esquerda {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 150px;
+}
+
+/* direita */
+.gif-direita {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 150px;
 }
