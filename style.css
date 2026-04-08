@@ -1,5 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Container principal */
+main {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 420px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Título dos fieldsets */
+legend {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Inputs gerais */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Focus (quando clica) */
+input:focus, select:focus, textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+/* Radios e checkboxes alinhados */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover do botão */
+button:hover {
+    background: #574fd6;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    padding: 12px;
+    background: #e6ffed;
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    color: #155724;
+}
+
+/* Responsividade (celular) */
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
 }
